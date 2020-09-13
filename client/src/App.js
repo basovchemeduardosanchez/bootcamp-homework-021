@@ -11,17 +11,17 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className="jumbotron jumbotron-fluid">
+      <div className="jumbotron jumbotron-fluid mb-0">
         <div className="container">
           <h1 className="display-4">Google Books Search</h1>
           <p className="lead">Search Books and Save Books of Interest</p>
         </div>
       </div>
       <Switch>
-        <Route exact path={[`/search`, '/']} >
+        <Route exact path={ [ `/search`, '/' ] } >
           <Search />
         </Route>
-        <Route exact path={[`/saved`, '/']} >
+        <Route exact path={ [ `/saved`, '/' ] } >
           <Saved />
         </Route>
       </Switch>

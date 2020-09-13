@@ -9,12 +9,14 @@ const bookSchema = new Schema({
     },
     authors: {
         type: Array,
-        required: true,
+        required: false,
+        // Google Books not always have authors
         trim: true
     },
     description: {
         type: String,
-        required: true,
+        // Google books not always have description
+        required: false,
         trim: true
     },
     image: {
