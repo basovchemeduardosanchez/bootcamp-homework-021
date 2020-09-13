@@ -7,7 +7,7 @@ function Header(){
     return (
         <header>
             <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-                <Link className="navbar-brand" to="./" >
+                <Link className="navbar-brand" to="/" >
                     Google Books Search
                 </Link>
                 <ul className="navbar-nav">

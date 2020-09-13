@@ -51,7 +51,7 @@ function Book( props ){
     }
 
     function renderButtons(){
-        let viewButton = <Button href={ bookData.link } type="primary" icon="eye">View</Button>;
+        let viewButton = <Button href={ bookData.link } target="_blank" type="primary" icon="eye">View</Button>;
 
         if ( isBookSaved() ){
             return (

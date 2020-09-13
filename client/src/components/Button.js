@@ -14,7 +14,7 @@ function getIcon( icon ){
 function Button( props ){
     if ( props.href ){
         return (
-            <a className={ `btn btn-${ props.type }${ props.disabled ? ' disabled' : '' }${ props.className ? ' ' + props.className : '' }` } href={ props.href } role="button" aria-disabled={ props.disabled ? 'true' : undefined } >
+            <a className={ `btn btn-${ props.type }${ props.disabled ? ' disabled' : '' }${ props.className ? ' ' + props.className : '' }` } href={ props.href } target={ props.target } rel="noreferrer" rel="noopener" role="button" aria-disabled={ props.disabled ? 'true' : undefined } >
                 { getIcon( props.icon ) }{ props.children || props.text }
             </a>
         );
